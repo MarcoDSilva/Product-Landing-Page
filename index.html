@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="landing.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+<!-- testing if the project has the requirements to pass-->
+<script src="https://gitcdn.link/cdn/freeCodeCamp/testable-projects-fcc/089ab0dcb59efc76ee0e69e73e4d2f5d39c32fd1/build/bundle.js"></script>
+
+<!-- for some reason, media query and flexblox display are only aproved by the tests if they are in the html page, and not in the css page-->
+<style>
+@media (max-width:600px) {
+	.header {
+		width:100%;
+	}
+}
+
+.pricing {
+	margin-top:15px;
+	display:flex;
+	justify-content: space-around;
+	text-align: center;
+	border-top:1px solid #BDBDBD;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page-container">
+
+	<header id="header" class="header">
+		<div class="logo">
+			<img id="header-img" src="https://image.flaticon.com/icons/svg/129/129501.svg" alt="logotipo">
+		</div>
+
+		<nav id="nav-bar">
+			<ul>
+				<li><a href="#aboutUs" class="nav-link">About us</a></li>
+				<li><a href="#video" class="nav-link">Products</a></li>
+				<li><a href="#pricing" class="nav-link">Pricing</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container2" id="aboutUs">
+
+		<h2>Home-made Coffee</h2>
+		<p class="subscribe">Subscribe our newsletter about our new coffe</p>
+
+		<div class="get-email">
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<label for="email" class="email">Email:</label>
+				<input type="email" input="email" name="email" id="email" placeholder="insert your e-mail"> 
+				<input type="submit" name="submit" placeholder="submit" id="submit" class="submit-btn"> 
+			</form>
+		</div>
+
+		<div class="media">
+			<iframe id ="video" width="560" height="315" src="https://www.youtube.com/embed/TN0cxBYh8t8?start=9" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+	<div class="pricing" id="pricing">
+
+		<section class="price1">
+			<h4>Cheaper Coffe</h4>
+
+			<p>Aromatic single origin cortado java crema con panna carajillo. Plunger pot, coffee decaffeinated barista café au lait so seasonal. Organic percolator aromatic and extraction, cup dripper.</p>
+
+			<div>
+				<img src="https://images.pexels.com/photos/40433/pexels-photo-40433.jpeg" alt="grains coffe" class="img-coffe">
+			</div>
+			
+			<button class="btn">Buy me!</button>
+		</section>
+
+		<section class="price2">
+			<h4>Good coffe</h4>
+
+			<p>Aromatic single origin cortado java crema con panna carajillo. Plunger pot, coffee decaffeinated barista café au lait so seasonal. Organic percolator aromatic and extraction, cup dripper.</p>
+
+			<div>
+				<img src="https://images.pexels.com/photos/144253/coffee-coffee-cup-porcelain-coffee-beans-144253.jpeg" class="img-coffe">
+			</div>
+		
+			<button class="btn">Buy me!</button>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="copyrights">
+			<p>Copyrights: Coffe Man 2018</p>
+		</div>
+		
+		<div class="info">
+			<ul>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+</body>
+</html>
